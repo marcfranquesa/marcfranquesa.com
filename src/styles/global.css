@@ -1,0 +1,15 @@
+html {
+    font-family: Arial, sans-serif;
+}
+
+body {
+    padding-top: 50px;
+    max-width: 750px;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+a:link, a:visited {
+    color: #0000EE;
+}

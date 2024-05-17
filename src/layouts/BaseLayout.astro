@@ -1,0 +1,26 @@
+---
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import "@/styles/global.css";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+
+    <meta name="title" content="Marc Franquesa Monés" />
+    <meta name="author" content="Marc Franquesa Monés" />
+    <meta name="description" content="Marc Franquesa's personal website" />
+
+    <title>Marc Franquesa Monés</title>
+  </head>
+  <body>
+    <Header />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>
