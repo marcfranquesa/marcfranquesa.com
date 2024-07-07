@@ -1,0 +1,17 @@
+.outside-link {
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.outside-link:link {
+    color: #006fdf;
+}
+
+.outside-link:visited {
+    color: #0050a0;
+}
+
+.outside-link:hover {
+    color: #002244;
+    text-decoration: underline;
+}
