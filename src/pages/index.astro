@@ -5,7 +5,6 @@ import marcfranquesaImage from "@/assets/marcfranquesa.jpg";
 ---
 
 <BaseLayout>
-  <h1>Marc Franquesa Monés</h1>
   <div class="content">
     <div>
       <p>
@@ -34,10 +33,14 @@ import marcfranquesaImage from "@/assets/marcfranquesa.jpg";
 </BaseLayout>
 
 <style>
-  h1 {
-    padding-bottom: 20px;
-    font-weight: 400;
-    font-size: 30px;
+  p {
+    text-align: justify;
+  }
+
+  img {
+    border-radius: 50%;
+    max-width: 200px;
+    height: auto;
   }
 
   .content {
@@ -47,30 +50,18 @@ import marcfranquesaImage from "@/assets/marcfranquesa.jpg";
     gap: 50px;
   }
 
-  p {
-    text-align: justify;
-  }
-
   .socials {
     text-align: center;
-  }
-
-  img {
-    border-radius: 50%;
-    max-width: 200px;
-    height: auto;
   }
 
   p.socials a {
     padding: 5px;
   }
 
-  @media (max-width: 600px) {
+  @media screen and (max-width: 636px) {
     .content {
       flex-direction: column-reverse;
-    }
-    h1 {
-      text-align: center;
+      padding-top: 20px;
     }
   }
 </style>

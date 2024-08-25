@@ -1,5 +1,28 @@
 ---
-
+import Hamburger from "./Hamburger.astro";
+import Navigation from "./Navigation.astro";
 ---
 
-<header></header>
+<header>
+  <h1><a href="/">Marc Franquesa Monés</a></h1>
+  <nav>
+    <Hamburger />
+    <Navigation />
+  </nav>
+</header>
+
+<style>
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+  }
+</style>
+
+<script>
+  document.querySelector(".hamburger")?.addEventListener("click", () => {
+    document.querySelector(".nav-links")?.classList.toggle("expanded");
+  });
+</script>

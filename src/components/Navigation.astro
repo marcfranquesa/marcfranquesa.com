@@ -1,0 +1,62 @@
+---
+const pathname = new URL(Astro.request.url).pathname;
+const currentPath = pathname.slice(1);
+---
+
+<div class="nav-links">
+  <a class={currentPath === "" ? "active" : ""} href="/">home</a>
+  <a class={currentPath === "misc" ? "active" : ""} href="/misc">misc</a>
+</div>
+
+<style>
+  .nav-links {
+    display: flex;
+    display: block;
+    position: static;
+    width: auto;
+    background: none;
+    white-space: nowrap;
+  }
+
+  .nav-links a {
+    background-color: transparent;
+    text-decoration: none;
+    color: #000000;
+    display: inline-block;
+    padding: 15px 20px;
+  }
+
+  .nav-links a:hover {
+    color: #333;
+  }
+
+  .nav-links a:last-child {
+    margin-right: 0;
+  }
+
+  .nav-links a.active {
+    text-decoration: underline;
+  }
+
+  @media screen and (max-width: 636px) {
+    .nav-links {
+      clip-path: inset(0 0 100% 0);
+      transition: clip-path 0.3s ease;
+      background: #fefefe;
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      align-items: center;
+      justify-content: center;
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .nav-links.expanded {
+      clip-path: inset(0 0 0 0);
+    }
+  }
+</style>

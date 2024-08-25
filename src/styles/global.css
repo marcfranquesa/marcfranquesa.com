@@ -12,8 +12,26 @@ body {
     padding-left: 20px;
     padding-right: 20px;
     background-color: #fefefe;
+    font-weight: 400;
+}
+
+h1 {
+    color: black;
+    font-weight: 350;
+    font-size: 25px;
+    white-space: nowrap;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 25px;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
 }
 
 a:link, a:visited {
-    color: #0000EE;
+    color: inhreit;
 }
