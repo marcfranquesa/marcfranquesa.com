@@ -28,7 +28,7 @@ import marcfranquesaImage from "@/assets/marcfranquesa.jpg";
         >
       </p>
     </div>
-    <Image src={marcfranquesaImage} alt="Marc Franquesa" />
+    <Image src={marcfranquesaImage} alt="Marc Franquesa" loading="eager" />
   </div>
 </BaseLayout>
 
@@ -38,6 +38,8 @@ import marcfranquesaImage from "@/assets/marcfranquesa.jpg";
   }
 
   img {
+    max-width: 200px;
+    height: auto;
     border-radius: 50%;
   }
 
