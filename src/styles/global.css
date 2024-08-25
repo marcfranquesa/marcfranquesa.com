@@ -1,37 +1,38 @@
 @import url("outside-link.css");
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 html {
-    font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
-    padding-top: 50px;
-    max-width: 750px;
-    margin: auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    background-color: #fefefe;
-    font-weight: 400;
+  padding-top: 50px;
+  max-width: 750px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #fefefe;
+  font-weight: 400;
 }
 
 h1 {
-    color: black;
-    font-weight: 350;
-    font-size: 25px;
-    white-space: nowrap;
+  color: black;
+  font-weight: 350;
+  font-size: 25px;
+  white-space: nowrap;
 }
 
 h2 {
-    font-weight: 500;
-    font-size: 25px;
+  font-weight: 500;
+  font-size: 25px;
 }
 
 a {
-    color: inherit;
-    text-decoration: inherit;
+  color: inherit;
+  text-decoration: inherit;
 }
 
-a:link, a:visited {
-    color: inhreit;
+a:link,
+a:visited {
+  color: inhreit;
 }
